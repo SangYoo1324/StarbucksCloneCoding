@@ -1,0 +1,329 @@
+a{
+    text-decoration: none;
+    display: block;
+}
+
+@media (min-width: 960px){
+    .mobile-top-bar{
+        display:none;
+    }
+}
+@media(max-width:960px){
+    .pc-top-bar{
+        display:none;
+    }
+}
+
+.con{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* General pc-top-bar wrap  */
+header.pc-top-bar{
+    height: 120px;
+    background-color: #f6f5ef;
+    
+}
+
+.pc-top-bar .con a.logo{
+    display: flex;
+    align-items: center;
+}
+
+.pc-top-bar .con .menu-wrap{
+    margin-left: auto;
+}
+/* General pc-top-bar wrap  */
+
+/* pc-top-bar__upper-menu css  */
+.pc-top-bar__upper-menu{
+    flex-grow: 1;
+}
+
+
+.pc-top-bar__upper-menu > ul > li  {
+    display: flex;
+    padding: 0 10px;
+    position:relative;
+}
+.pc-top-bar__upper-menu > ul > li:hover  {
+text-decoration: underline;
+}
+
+.pc-top-bar__upper-menu > ul > li:not(:last-child)::after  {
+   content:"";
+   background-color: black;
+   width:1px;
+   height:15px;
+   position:absolute;
+   top:25%;
+   left:100%;
+}
+
+
+.search-btn{
+    background-color: white;
+    height:34px;
+    width: 34px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.search-btn img{
+    height:20px;
+    width: 20px;
+}
+/* pc-top-bar__upper-menu css  */
+
+/* pc-top-bar__lower-menu css  */
+.pc-top-bar__lower-menu > ul > li>a{
+    font-weight: bold;
+    opacity: 70%;
+    padding: 10px 20px;
+}
+.pc-top-bar__lower-menu > ul > li:hover{
+    background-color: #2c2a29;
+    color: #669900;
+
+}
+/* pc-top-bar__lower-menu css  */
+
+
+/* pc-top-bar__lower-menu__sub-menu  */
+.lower-menu__sub-menu > .con{
+ display:block;
+}
+
+.lower-menu__sub-menu{
+    /* display: none; */
+    height:0;
+    overflow: hidden;
+    position:absolute;
+    left:0;
+    width:100%;
+    background-color: #2c2a29; 
+    z-index: 10;
+    transition: height 0.5s;
+}
+
+.pc-top-bar__lower-menu > ul > li:hover > .lower-menu__sub-menu{
+   height: 300px;
+}
+
+
+/* 2차메뉴 속성  */
+.lower-menu__sub-menu > .con > ul > li > a{
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.lower-menu__sub-menu > .con > ul {
+    margin-top: 10px;
+}
+/* 2차메뉴 속성  */
+
+/* 2차, 3차 메뉴 공통 속성  */
+.lower-menu__sub-menu > .con  ul > li > a{
+display: block;
+}
+/* 2차, 3차 메뉴 공통 속성  */
+
+/* 3차메뉴 속성  */
+.lower-menu__sub-menu > .con  ul > li > ul > li > a{
+    color: #999;
+    padding: 5px 0;
+    font-size : 14px;
+}
+
+.lower-menu__sub-menu > .con  ul > li > ul {
+    /* background-color: rebeccapurple; */
+    margin-bottom: 10px;
+}
+/* 3차메뉴 속성  */
+
+/* What's new 부분만 패딩줌    flex-1 해제 */
+.lower-menu__sub-menu > .con ul > li{
+    padding-right: 70px;
+}
+
+/* pc-top-bar__lower-menu__sub-menu  */
+
+/* main-top-banner  */
+.main-top-banner{
+background-image: url("./images/main-top-bar.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height:34vw;
+}
+.main-top-banner .main-top-banner__con{
+    position: relative;
+    height: 100%;
+    max-width:100%;
+}
+
+.main-top-banner__slogan{
+    position:absolute;
+    top:30%;
+    width:35%;
+}
+.main-top-banner__slogan > img{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* main-top-banner season-menu  */
+.main-top-banner__menu__wrap >.season-menu >img{
+    display: block;
+}
+.main-top-banner__menu__wrap >.season-menu{
+    position:absolute;
+}
+
+.main-top-banner__menu__wrap >.season-menu.menu-1{
+ z-index: 1;
+ top: 8.5%;
+ left: 41.5%;
+ width:22%;
+}
+
+.main-top-banner__menu__wrap >.season-menu.menu-2{
+    z-index: 1;
+    top: 31.5%;
+    left: 55.5%;
+    width:22%;
+}
+
+.main-top-banner__menu__wrap >.season-menu.menu-3{
+    z-index: 1;
+    top: 21.5%;
+    left: 70.5%;
+    width:22%;
+}
+
+ .see-detail-btn{
+    z-index: 1;
+    position: absolute;
+    /* border: 2px solid blue; */
+    top:75%;
+    left:5%;
+    text-align: center;
+    width:25%;
+}
+.see-detail-btn > a{
+    display: inline-block;
+    width:30%;
+    border-radius: 10px;
+    border: 2px solid rosybrown;
+    padding:10px;
+    color: rosybrown;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.see-detail-btn:hover > a{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+/* main-top-banner season-menu  */
+
+
+/* main-top-banner  */
+
+/* notice-line  */
+.notice-line{
+    position:relative;
+}
+.notice-line__con{
+    width:1280px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* notice-line  */
+
+/* starbucks reward :start */
+.reward-wrap{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #1e3932;
+
+}
+
+.reward-con{
+    max-width: 1080;
+    margin: 0 auto;
+}
+
+
+.reward-con > .reward__logo > img{
+    width: 176px;
+}
+
+
+.info-contents__text{
+    box-sizing: border-box;
+    width: 900px;
+    padding-right: 30px;
+
+}
+
+.info-contents__btn{
+    
+    position:absolute;
+    bottom:60px;
+    right:0;
+    display: flex;
+    color: #fff;
+    gap: 0 10px;
+}
+
+.info-contents__btn >a {
+    border: 2px solid white;
+    height: 38px;
+    padding: 0 18.5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.info-contents__btn >a:hover {
+ text-decoration: underline;
+}
+
+.info-contents__btn >a:first-child{
+    background-color: #00704a;
+    border: 2px solid #00704a;
+}
+.reward__contents__up{
+    border-bottom: 1px solid white;
+    padding-bottom: 22px;
+}
+.gift-contents__btn{
+    right:0px;
+}
+
+.gift-contents__btn > a{
+    color: white;
+    border: 2px solid white;
+    height: 38px;
+    padding: 0 18.5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.gift-contents__btn > a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #00704a;
+}
+/* starbucks reward :end */
