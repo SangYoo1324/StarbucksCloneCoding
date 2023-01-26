@@ -327,3 +327,141 @@ height:34vw;
     background-color: #00704a;
 }
 /* starbucks reward :end */
+
+/* christmas Banner  */
+.christmas-blend-bean{
+    position: relative;
+    background-image: url(./images/2023_newyear_promotion_bg.jpg);
+    height:546px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+.christmas-blend-bean::before{
+    background-image: url(./images/ChineseNewYearChar2.png);
+    background-size: cover;
+top:0;
+left:0;
+width:234px;
+height:300px;
+content: '';
+display: block;
+position: absolute;
+}
+
+.chirstmas-blend-bean__con{
+    max-width: 1124px;
+    margin:0 auto;
+}
+
+.christmas-blend-bean__txt-wrap{
+    position:relative;
+    color:maroon
+}
+.christmas-blend-bean__txt-wrap > a{
+    width:25%;
+    position:absolute;
+    font-size: 15px;
+    line-height:34px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing:border-box;
+    top:150px;
+    border: 2px solid white;
+}
+/* christmas Banner :end */
+
+/* reserve banner */
+
+.reserve-bean{
+    height:500px;
+}
+
+.reserve-bean > .reserve-bean__con{
+    position: relative;
+    background-image:url(./images/reserve_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reserve-bean > .reserve-bean__con::before{
+    display: block;
+    position: absolute;
+    left:10px;
+    content: '';
+    background-image: url(./images/reserve_left_bg.png);
+    background-size: cover;
+    width: 15%;
+    height: 500px;
+}
+
+.reserve-bean > .reserve-bean__con::after{
+    display: block;
+    position: absolute;
+    right:10px;
+    content: '';
+    background-image: url("./images/resserve_right_bg.png") ;
+    background-size: cover;
+    width: 20%;
+    height: 500px;
+    
+}
+
+.reserve-bean > .reserve-bean__con > .reserve-bean__logo{
+    z-index: 10;
+width: 30%;
+height: 100%;
+position: absolute;
+top: 50%;
+left: 30%;
+transform: translateY(-50%);
+flex-wrap: wrap;
+
+}
+
+
+
+
+.reserve-bean > .reserve-bean__con > .reserve-bean__logo>img{
+    height:40%;
+    width:80%;
+    margin-bottom: 30px;
+}
+
+.reserve-bean > .reserve-bean__con >.reserve-bean__logo>a{
+    
+    border: 2px solid #966932;
+    text-align: center;
+    width:25%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color:#966932;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    
+}
+.reserve-bean > .reserve-bean__con > .reserve-bean__logo > a:hover{
+background-color: #966932;
+color: white;
+}
+
+
+.reserve-bean > .reserve-bean__con > .reserve-bean__coffee{
+    
+    width:90%;
+    height:90%;
+    position: absolute;
+    right:0%;
+    top:0%;
+
+
+}
+.reserve-bean > .reserve-bean__con > .reserve-bean__coffee>img{
+    
+     width:90%;
+     height:90%;
+     position: absolute;
+     right:0%;
+     top:0%;
+ 
+ }
+
+
+/* reserve banner :end*/
